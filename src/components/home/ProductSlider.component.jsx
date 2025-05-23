@@ -1,0 +1,115 @@
+"use client";
+
+import React, { useRef, useEffect } from "react";
+import Link from "next/link";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { SLIDER_BREAK_POINT } from "@/constant/view.contant";
+
+import ProductBox from "@/components/shared/ProductBox/ProductBox.component";
+import SectionTitle from "@/components/home/SectionTitle.component";
+import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import IconLoader from "../../../public/Icon/Icon-Loader";
+
+function ProductSlider({ products, sectionTitle }) {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (
+      swiperRef.current &&
+      swiperRef.current.params &&
+      swiperRef.current.params.navigation
+    ) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, []);
+
+  return (
+    <div className="relative flex justify-center items-center border border-primaryOrange-light rounded-2xl h-[360px] sm:h-[340px] mt-20 px-5 select-none">
+      <div className="flex flex-row sm:flex-col items-center">
+        <span className="w-full absolute -top-24 right-0 left-0 mx-auto">
+          <SectionTitle text={sectionTitle} />
+        </span>
+
+        <Link
+          href={"/"}
+          className="w-fit absolute -top-4 left-8 bg-primaryBg px-3 rounded-2xl"
+        >
+          <BaseButton
+            iconName="arrowleft-solid"
+            sideIcon="left"
+            text="مشاهده همه"
+            varient="outline"
+            color="border-primaryOrange-light"
+            textColor="text-black"
+            size="small"
+          />
+        </Link>
+      </div>
+
+      <div className="w-full max-w-6xl">
+        <div
+          ref={prevRef}
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10"
+        >
+          <div className="bg-white text-black p-2 rounded-full shadow cursor-pointer">
+            <IconLoader name="chevronright-solid" />
+          </div>
+        </div>
+
+        <div
+          ref={nextRef}
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
+        >
+          <div className="bg-white text-black p-2 rounded-full shadow cursor-pointer">
+            <IconLoader name="chevronleft-solid" />
+          </div>
+        </div>
+
+        <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          modules={[Navigation, Autoplay, Pagination]}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          spaceBetween={20}
+          slidesPerView={3}
+          breakpoints={SLIDER_BREAK_POINT}
+          loop={true}
+          className="mySwiper h-full"
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <ProductBox
+                title={product.title}
+                rate={product.rate}
+                price={product.price}
+                image={product.image}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  );
+}
+
+export default ProductSlider;
