@@ -1,7 +1,7 @@
 "use client";
 import React, { useMemo } from "react";
 
-import { toNormalizedColorStyles } from "@/helper/string.helpers";
+import { toNormalizedColorStyles } from "@/helper/string.helper";
 
 import IconLoader from "../../../../public/Icon/Icon-Loader";
 
