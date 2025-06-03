@@ -20,7 +20,7 @@ const BaseButton = ({
   isDisable,
   isLoading,
   data,
-  updatedAction,
+  updatedAction = () => {},
 }) => {
   const buttonType = useMemo(() => {
     const normalizedTextColor = toNormalizedColorStyles({
@@ -38,15 +38,15 @@ const BaseButton = ({
 
     if (varient === "text") {
       return isDisable
-        ? `text-gray-500`
+        ? `text-gray-500 opacity-50 cursor-not-allowed`
         : `${normalizedTextColor} hover:brightness-60 transition-all`;
     } else if (varient === "outline") {
       return isDisable
-        ? "border border-gray-500 rounded-md text-gray-500"
+        ? "border border-gray-500 rounded-md text-gray-500 opacity-50 cursor-not-allowed"
         : `border rounded-md ${normalizedBorderColor} ${normalizedTextColor} hover:brightness-60 transition-all`;
     } else if (varient === "contained") {
       return isDisable
-        ? `bg-gray-400 text-gray-500 rounded-md`
+        ? `bg-gray-400 text-gray-500 rounded-md opacity-50 cursor-not-allowed`
         : `text-inherit rounded-md ${normalizedBgColor} hover:brightness-60 transition-all`;
     }
   }, [varient, isDisable, color]);
@@ -67,8 +67,9 @@ const BaseButton = ({
 
   return (
     <button
+      aria-label={iconName}
       disabled={!!isDisable}
-      className=" text-inherit cursor-pointer"
+      className=" text-inherit w-full cursor-pointer"
       onClick={() => updatedAction(data)}
     >
       {isLoading ? (

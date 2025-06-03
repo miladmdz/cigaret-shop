@@ -40,15 +40,17 @@ const BaseMenu = forwardRef((props, ref) => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-end p-2 ">
-          <BaseButton
-            iconName="close-solid"
-            iconColor="white"
-            sideIcon="right"
-            varient="text"
-            iconSize={30}
-            updatedAction={() => setVisibility(false)}
-          />
+        <div className="flex  justify-end p-2 ">
+          <div className="w-fit">
+            <BaseButton
+              iconName="close-solid"
+              iconColor="white"
+              sideIcon="right"
+              varient="text"
+              iconSize={30}
+              updatedAction={() => setVisibility(false)}
+            />
+          </div>
         </div>
 
         <div className="p-4 h-full overflow-y-auto">{children}</div>
