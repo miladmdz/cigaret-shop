@@ -26,7 +26,11 @@
 
   --color-primaryOrange-light: #fa8439;
   --color-primaryOrange: #ff6900;
-  --color-primaryOrange-dark: #ea6132;
+  --color-primaryOrange-dark: #e56600;
+
+  --color-secondaryOrang-light: #f68c3a;
+  --color-secondaryOrang-medium: #f2761b;
+  --color-secondaryOrang-dark: #e55c00;
 
   --color-primaryBg: #f5f5f5;
 
@@ -46,7 +50,7 @@
 }
 
 .banner-background {
-  background-image: url(../../public/Images/wall-background3.webp);
+  background-image: url(../../public/Images/wall-background.webp);
   width: 100%;
   height: 160px;
   background-size: cover;
@@ -70,4 +74,31 @@
 .swiper-pagination-bullet-active {
   background-color: #212529 !important; /* white */
   opacity: 1 !important;
+}
+
+/* price range filter */
+
+.range-thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background-color: var(--color-primaryOrange-light);
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: -2px;
+}
+
+.range-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  height: 12px;
+  width: 12px;
+  background-color: var(--color-primaryOrange-light);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.range-thumb {
+  -webkit-appearance: none;
+  background: transparent;
 }
