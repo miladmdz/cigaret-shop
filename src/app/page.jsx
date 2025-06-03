@@ -7,7 +7,10 @@ import PromotionalSlider from "@/components/home/PromotionalSlider.component";
 import TransportNotic from "@/components/home/TransportNotic.component";
 
 const Home = () => {
-  const images = ["./images/banner1.jpg", "./images/banner2.webp"];
+  const images = [
+    { src: "/images/banner1.webp", desc: "first banner image" },
+    { src: "/images/banner2.webp", desc: "second banner image" },
+  ];
 
   return (
     <div>
@@ -24,6 +27,7 @@ const Home = () => {
             src="/images/cigarBanner.webp"
             alt="cigaret banner"
             fill
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
         </div>
 
@@ -33,6 +37,7 @@ const Home = () => {
             src="/images/pipBanner.webp"
             alt="pip banner"
             fill
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
         </div>
       </div>
