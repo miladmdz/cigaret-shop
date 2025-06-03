@@ -80,8 +80,9 @@ export default function BrandSlider() {
                 <Image
                   src={image.src}
                   alt={image.name}
-                  fill
                   className="rounded-4xl"
+                  fill
+                  sizes="(min-width: 1024px) 300px, (min-width: 640px) 200px, 120px"
                 />
               </div>
             </SwiperSlide>
