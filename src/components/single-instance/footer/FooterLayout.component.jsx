@@ -8,45 +8,16 @@ import {
   FAST_ACCESSE_FOOTER,
   POPULAR_BRANDS_FOOTER,
 } from "@/constant/view.contant";
+import LinkList from "./LinkList.component";
 
 function FooterLayout() {
   return (
     <footer className=" bg-primaryBlack  ">
       <div className="grid grid-cols-1 xl:grid-cols-3 py-5 px-10">
         <div className="w-full flex flex-col sm:flex-row xl:flex-col items-center justify-between gap-8">
-          <div className="flex flex-col items-center gap-2">
-            <h2 className="font-Dana-Medium text-primaryOrange-light">
-              دسترسی سریع
-            </h2>
-            <ul className="flex flex-col items-center gap-2 pr-2">
-              {FAST_ACCESSE_FOOTER.map((item) => (
-                <Link
-                  key={item.title}
-                  className="text-white text-sm cursor-pointer hover:text-gray-400/50 transition-colors"
-                  href={item.href}
-                >
-                  <li>{item.title}</li>
-                </Link>
-              ))}
-            </ul>
-          </div>
+          <LinkList title="دسترسی سریع" linkList={FAST_ACCESSE_FOOTER} />
 
-          <div className="flex flex-col items-center gap-2">
-            <h2 className="font-Dana-Medium text-primaryOrange-light">
-              دسته بندی محصولات
-            </h2>
-            <ul className="flex flex-col items-center gap-2 pr-2">
-              {CATEGORY_FOOTER.map((item) => (
-                <Link
-                  key={item.title}
-                  className="text-white text-sm cursor-pointer hover:text-gray-400/50 transition-colors"
-                  href={item.href}
-                >
-                  <li>{item.title}</li>
-                </Link>
-              ))}
-            </ul>
-          </div>
+          <LinkList title="دسته بندی محصولات" linkList={CATEGORY_FOOTER} />
         </div>
 
         <div className="w-full flex flex-col items-center justify-center">
@@ -69,11 +40,11 @@ function FooterLayout() {
             </p>
 
             <span className="flex items-center justify-center gap-5">
-              <Link href="/">
+              <Link href="/" aria-label="instagram link">
                 <IconLoader name="instagram-solid" color="#fa8439" size={30} />
               </Link>
 
-              <Link href="/">
+              <Link href="/" aria-label="telegram id">
                 <IconLoader name="telegram-outline" color="#fa8439" size={30} />
               </Link>
             </span>
@@ -86,6 +57,7 @@ function FooterLayout() {
               <div className="flex items-center justify-center flex-wrap gap-3 max-w-[336px]">
                 {POPULAR_BRANDS_FOOTER.map((brand) => (
                   <Link
+                    aria-label={brand.name}
                     key={brand.name}
                     className="border border-white text-white px-3 py-1 rounded"
                     href={brand.href}
@@ -96,18 +68,20 @@ function FooterLayout() {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
 
-        <div className="w-full h-full flex flex-col sm:flex-row xl:flex-col mt-5 sm:mt-0 items-center justify-between">
+        <div className="w-full h-full flex flex-col sm:flex-row mt-5 sm:mt-0 xl:flex-col items-center justify-between">
           <div className="flex flex-col items-center gap-2">
             <h2 className="font-Dana-Medium text-primaryOrange-light">
               تماس با پشتیبانی :
             </h2>
 
             <span className="flex flex-col items-center justify-start">
-              <Link className="text-white text-sm cursor-pointer" href="/">
+              <Link
+                aria-label="phone number"
+                className="text-white text-sm cursor-pointer"
+                href="/"
+              >
                 09123456789
               </Link>
               <p className="text-white text-sm cursor-pointer">
@@ -125,9 +99,10 @@ function FooterLayout() {
               اردبیل، شهرک آزادی، ابتدای خیابان آذربایجان، نبش بلوک یکم، پلاک 5
             </p>
           </div>
-        </div>
-        <div>
-          <IconLoader name="verify-solid" color="#fa8439" />
+
+          <div className="min-w-[100px] flex items-center justify-center">
+            <IconLoader name="verify-solid" color="#fa8439" size={30} />
+          </div>
         </div>
       </div>
 

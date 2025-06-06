@@ -1,4 +1,5 @@
 const SIDE_FILTERS_MAP = [
+  { label: "همه", value: "all" },
   { label: "سیگار", value: "Cigaret" },
   { label: "طعم قلیان", value: "Hookah flavor" },
   { label: "اکسسوری", value: "accessory" },

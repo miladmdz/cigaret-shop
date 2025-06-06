@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 
 const HeaderNav = () => {
@@ -21,19 +23,24 @@ const HeaderNav = () => {
         <div className="text-white font-Dana-Medium text-sm">
           ارسال در سراسر ایران
         </div>
-        <div className="hidden sm:block">
-          <BaseButton
-            iconName="instagram-solid"
-            sideIcon="left"
-            color="text-white"
-            varient="text"
-          />
-          <BaseButton
-            iconName="phone-outline"
-            sideIcon="left"
-            color="text-white"
-            varient="text"
-          />
+        <div className="hidden sm:flex w-28  items-center">
+          <Link className="w-fit block" href="/" aria-label="instagram link">
+            <BaseButton
+              iconName="instagram-solid"
+              sideIcon="left"
+              color="text-white"
+              varient="text"
+            />
+          </Link>
+
+          <Link className="w-fit block" href="/" aria-label="phone number">
+            <BaseButton
+              iconName="phone-outline"
+              sideIcon="left"
+              color="text-white"
+              varient="text"
+            />
+          </Link>
         </div>
       </div>
     </>
