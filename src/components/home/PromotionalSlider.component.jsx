@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
@@ -44,7 +45,15 @@ function PromotionalSlider({ images }) {
       >
         {images.map((image) => (
           <SwiperSlide>
-            <img src={image} className="rounded-4xl" />
+            <div className="relative w-full min-h-[200px] sm:min-h-[300px] xl:min-h-[400px]">
+              <Image
+                src={image.src}
+                alt={image.desc}
+                fill
+                sizes="100vw"
+                className="rounded-4xl"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
