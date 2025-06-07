@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { formatCurrency } from "@/utils/currency";
+import { formatCurrency } from "@/utils/currency.util";
 
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import BaseCounter from "@/components/shared/BaseCounter/BaseCounter.component";

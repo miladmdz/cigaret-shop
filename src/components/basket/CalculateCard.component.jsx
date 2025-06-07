@@ -6,7 +6,7 @@ import { VALUE_ADDED_TAX } from "@/constant/financial.constant";
 
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import BaseAccordion from "@/components/shared/BaseAccordion/BaseAccordion.compoent";
-import { formatCurrency } from "@/utils/currency";
+import { formatCurrency } from "@/utils/currency.util";
 
 function CalculateCard({
   totalPrice = 0,
