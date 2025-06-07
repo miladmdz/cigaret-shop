@@ -26,7 +26,7 @@ function FooterLayout() {
               width={200}
               height={200}
               alt="logo website"
-              src="/images/logo-white.png"
+              src="/images/logo-white.webp"
             />
           </div>
 
