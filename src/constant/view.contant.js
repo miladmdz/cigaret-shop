@@ -76,6 +76,13 @@ const WARNING_BEFORE_BUY = [
   },
 ];
 
+const BUY_RULE_TEXT = [
+  "10% سبد خرید به مبلغ نهایی اضافه خواهد شد. (مالیات ارزش افزوده)",
+  "به شما اطمینان می دهیم، تمامی محصولات کاج اصل هستند.",
+  "مدت زمان رسیدن از زمان تحویل به پست، 1 تا 8 روز است.",
+  "امکان تجمیع و ارسال هم زمان چند سفارش وجود ندارد.",
+];
+
 const POPULAR_BRANDS_FOOTER = [
   { name: "Winston", href: "/" },
   { name: "Marlbro", href: "/" },
@@ -106,4 +113,5 @@ export {
   POPULAR_BRANDS_FOOTER,
   SLIDER_BREAK_POINT,
   WARNING_BEFORE_BUY,
+  BUY_RULE_TEXT,
 };
