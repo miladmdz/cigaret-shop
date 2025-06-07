@@ -6,11 +6,11 @@ function VerifyOutline({ className = "", size = 24, color = "currentColor" }) {
       width={size}
       height={size}
       className={className}
-      fill={color}
+      stroke={color}
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
     >
       <path
         strokeLinecap="round"
