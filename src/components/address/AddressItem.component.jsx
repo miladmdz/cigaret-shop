@@ -1,13 +1,13 @@
 import React from "react";
 
-import BaseButton from "../shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 
 function AddressItem({ address, setAddress = () => {}, isSelected }) {
   return (
     <div
       className={`${
         isSelected ? "border-primaryOrange-light" : "border-gray-500/50"
-      } flex flex-col border  rounded px-4 py-2 gap-4 transition-colors`}
+      } flex flex-col border min-w-[350px] rounded px-4 py-2 gap-4 transition-colors`}
     >
       <div
         onClick={() => setAddress(address)}
