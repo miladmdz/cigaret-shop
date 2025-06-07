@@ -1,53 +1,103 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 
-import BaseButton from "../shared/BaseButton/BaseButton.component";
 import { VALUE_ADDED_TAX } from "@/constant/financial.constant";
-import { useRouter } from "next/navigation";
 
-function CalculateCard({ totalPrice, discount = 0 }) {
-  const router = useRouter();
+import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseAccordion from "@/components/shared/BaseAccordion/BaseAccordion.compoent";
+import { formatCurrency } from "@/utils/currency";
 
-  const resultVAT = Number(totalPrice) * (VALUE_ADDED_TAX / 100);
-  const payableAmount = Number(totalPrice) + resultVAT;
+function CalculateCard({
+  totalPrice = 0,
+  discount = 0,
+  deliveryPrice = 0,
+  pushRoute = () => {},
+  buttonText = "ادامه و تکمیل سفارش",
+}) {
+  const { resultVAT, payableAmount } = useMemo(() => {
+    const price = Number(totalPrice);
+    const delivery = isNaN(Number(deliveryPrice)) ? 0 : Number(deliveryPrice);
+    const vat = price * (VALUE_ADDED_TAX / 100);
+    return {
+      resultVAT: vat,
+      payableAmount: price + vat + delivery,
+    };
+  }, [totalPrice, deliveryPrice]);
+
+  const fields = useMemo(
+    () => [
+      { label: "مبلغ کل", value: formatCurrency(totalPrice) },
+      {
+        label: "تخفیف",
+        value: formatCurrency(discount),
+        className: "text-green-700",
+      },
+      {
+        label: "هزینه ارسال",
+        value: deliveryPrice
+          ? formatCurrency(deliveryPrice)
+          : "فعلاً محاسبه نشده",
+      },
+      { label: "ارزش افزوده", value: formatCurrency(resultVAT) },
+    ],
+    [totalPrice, discount, deliveryPrice, resultVAT]
+  );
 
   return (
-    <div className="w-full flex flex-col items-start bg-white px-5 py-3 rounded text-sm">
-      <div className="flex w-full items-center justify-between border border-gray-700/60 rounded px-2 py-2 mb-5">
-        <h2>مبلغ قابل پرداخت</h2>
-        <p>{payableAmount.toLocaleString()} تومان</p>
+    <div className="w-full bg-white rounded shadow px-5 py-3 text-sm">
+      {/* Mobile View */}
+      <div className="block md:hidden">
+        <BaseAccordion
+          title={
+            <div className="flex flex-row w-full justify-between">
+              <h2 className="text-base font-semibold">مبلغ قابل پرداخت</h2>
+              <p>{formatCurrency(payableAmount)}</p>
+            </div>
+          }
+          iconPosition="right"
+        >
+          <div className="mt-2 divide-y divide-gray-300">
+            {fields.map(({ label, value, className }, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-between py-3"
+              >
+                <h3>{label}</h3>
+                <p className={className}>{value}</p>
+              </div>
+            ))}
+          </div>
+        </BaseAccordion>
       </div>
 
-      <div className="w-full flex flex-col items-start divide-y divide-gray-400/50">
-        <div className="w-full flex items-center justify-between py-3">
-          <h3>مبلغ کل</h3>
-          <p>{Number(totalPrice).toLocaleString()} تومان</p>
+      {/* Desktop View */}
+      <div className="hidden md:block">
+        <div className="flex items-center justify-between border border-gray-700/60 rounded px-2 py-2 mb-5">
+          <h2 className="text-base xl:text-sm font-semibold">
+            مبلغ قابل پرداخت
+          </h2>
+          <p className="text-base xl:text-sm">
+            {formatCurrency(payableAmount)}
+          </p>
         </div>
-
-        <div className="w-full flex items-center justify-between py-3">
-          <h3>تخفیف</h3>
-          <p className="text-green-700">{discount} تومان</p>
-        </div>
-
-        <div className="w-full flex items-center justify-between py-3">
-          <h3>هزینه ارسال</h3>
-          <p>فعلا محاسبه نشده</p>
-        </div>
-
-        <div className="w-full flex items-center justify-between py-3">
-          <h3>ارزش افزوده</h3>
-          <p>{resultVAT.toLocaleString()} تومان</p>
+        <div className="mt-2 divide-y divide-gray-300">
+          {fields.map(({ label, value, className }, index) => (
+            <div key={index} className="flex items-center justify-between py-3">
+              <h3>{label}</h3>
+              <p className={className}>{value}</p>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className="w-full mt-5">
         <BaseButton
           varient="contained"
-          text="ادامه و تکمیل سفارش"
+          text={buttonText}
           textColor="text-white"
           color="bg-primaryOrange-light"
-          updatedAction={() => router.push("/basket/address")}
+          updatedAction={() => pushRoute()}
         />
       </div>
     </div>
