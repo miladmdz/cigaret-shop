@@ -27,12 +27,13 @@ function HeaderBanner() {
       handler: () => router.push("/basket"),
     },
     {
-      iconName: "heart-outline",
+      iconName: "heart-solid",
       iconSize: windowSize.width < 640 ? 20 : 25,
       sideIcon: "left",
       varient: "text",
       color: "hidden lg:block text-gray-500",
       size: windowSize.width < 640 ? "small" : "medium",
+      handler: () => router.push("/pannel/user/favorite"),
     },
     {
       iconName: "user-outline",
