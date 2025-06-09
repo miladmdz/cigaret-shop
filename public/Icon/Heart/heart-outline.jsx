@@ -5,12 +5,12 @@ function HeartOutline({ className = "", size = 24, color = "currentColor" }) {
     <svg
       width={size}
       height={size}
-      fill={color}
       className={className}
+      stroke={color}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
+      fill="none"
     >
       <path
         strokeLinecap="round"
