@@ -7,7 +7,7 @@ import { BUY_RULE_TEXT } from "@/constant/view.contant";
 
 import CalculateCard from "@/components/basket/CalculateCard.component";
 import OrderList from "@/components/basket/OrderList.component";
-import TitleCard from "@/components/payment/TitleCard.component";
+import SectionTitle from "@/components/shared/SectionTitle/SectionTitle.component";
 import InfoCard from "@/components/payment/InfoCard.component";
 import DiscountSection from "@/components/payment/DiscountSection.component";
 
@@ -38,11 +38,11 @@ const Page = () => {
   return (
     <div className="flex flex-col xl:flex-row px-4 xl:px-40 py-10 items-start justify-between gap-5">
       <div className="flex w-full flex-col justify-end gap-5">
-        <TitleCard title="اقلام سفارش" />
+        <SectionTitle title="اقلام سفارش" />
 
         <OrderList />
 
-        <TitleCard title="اطلاعات سفارش" />
+        <SectionTitle title="اطلاعات سفارش" />
 
         <InfoCard iconName="location-outline">
           این سفارش به <span className="font-bold">{orderInfo.name}</span> به
