@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import BaseButton from "../shared/BaseButton/BaseButton.component";
-import IconLoader from "../../../public/Icon/Icon-Loader";
+import IconLoader from "../../../../../public/Icon/Icon-Loader";
 
 function ArticleBox({ title, image, view, date }) {
   return (

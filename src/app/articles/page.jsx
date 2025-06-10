@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleBox from "@/components/articles/ArticleBox.component";
+import ArticleBox from "@/components/pannel/user/articles/ArticleBox.component";
 
 function page() {
   //TODO:MOCKDATA:
