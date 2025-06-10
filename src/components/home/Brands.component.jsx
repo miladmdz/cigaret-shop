@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { SLIDER_BREAK_POINT } from "@/constant/view.contant";
+import { SLIDER_BREAK_POINT } from "@/constant/VIEW.contant";
 
 import IconLoader from "../../../public/Icon/Icon-Loader";
 

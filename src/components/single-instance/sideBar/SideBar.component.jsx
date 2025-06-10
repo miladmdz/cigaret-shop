@@ -23,6 +23,12 @@ function SideBar() {
       disable: true,
     },
     {
+      label: "مقالات",
+      value: "articles",
+      route: "/pannel/admin/articles",
+      iconName: "document-outline",
+    },
+    {
       label: "علاقه مندی ها",
       value: "favorite",
       route: "/pannel/user/favorite",
@@ -66,7 +72,7 @@ function SideBar() {
         </div>
 
         <div className="flex flex-col items-center justify-start">
-          <h2>{name}</h2>
+          <h2 className="font-bold text-primaryOrange-light">{name}</h2>
           <p>{phoneNumber}</p>
         </div>
       </div>

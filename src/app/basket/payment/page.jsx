@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { formatCurrency } from "@/utils/currency.util";
-import { BUY_RULE_TEXT } from "@/constant/view.contant";
+import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import CalculateCard from "@/components/basket/CalculateCard.component";
 import OrderList from "@/components/basket/OrderList.component";

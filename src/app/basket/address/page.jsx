@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { BUY_RULE_TEXT } from "@/constant/view.contant";
+import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import IconLoader from "../../../../public/Icon/Icon-Loader";
 import CalculateCard from "@/components/basket/CalculateCard.component";

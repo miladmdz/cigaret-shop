@@ -1,4 +1,4 @@
-import { WARNING_BEFORE_BUY } from "@/constant/view.contant";
+import { WARNING_BEFORE_BUY } from "@/constant/VIEW.contant";
 import React from "react";
 import IconLoader from "../../../public/Icon/Icon-Loader";
 

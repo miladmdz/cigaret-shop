@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionTitle = ({ text }) => {
+const HomeSectionTitle = ({ text }) => {
   return (
     <div className="flex items-center my-8">
       <div className="flex-grow h-0.5 bg-gradient-to-r from-primaryOrange-light rounded-full" />
@@ -12,4 +12,4 @@ const SectionTitle = ({ text }) => {
   );
 };
 
-export default SectionTitle;
+export default HomeSectionTitle;

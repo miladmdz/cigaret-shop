@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { BUY_RULE_TEXT } from "@/constant/view.contant";
+import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import RulesCard from "@/components/basket/RulesCard.component";
 import OrderList from "@/components/basket/OrderList.component";

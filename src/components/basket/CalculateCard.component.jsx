@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 
-import { VALUE_ADDED_TAX } from "@/constant/financial.constant";
+import { VALUE_ADDED_TAX } from "@/constant/FINACIAL.constant";
 
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import BaseAccordion from "@/components/shared/BaseAccordion/BaseAccordion.compoent";

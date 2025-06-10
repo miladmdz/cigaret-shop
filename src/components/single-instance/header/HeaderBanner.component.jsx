@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 
 import { useWindowSize } from "@/customHook/window.hook";
-import { ROUTER_MAP } from "@/constant/router.constant";
+import { ROUTER_MAP } from "@/constant/ROUTER.constant";
 
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import AnimatedMenu from "@/components/single-instance/header/AnimatedMenu.component";

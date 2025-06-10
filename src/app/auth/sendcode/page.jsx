@@ -3,7 +3,7 @@ import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import React, { useState } from "react";
 import IconLoader from "../../../../public/Icon/Icon-Loader";
 import Image from "next/image";
-import { CODE_REGEX } from "@/constant/regex.constant";
+import { CODE_REGEX } from "@/constant/REGEX.constant";
 import { useRouter } from "next/navigation";
 
 function page() {

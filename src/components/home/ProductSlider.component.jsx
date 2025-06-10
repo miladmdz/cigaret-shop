@@ -9,12 +9,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { SLIDER_BREAK_POINT } from "@/constant/view.contant";
+import { SLIDER_BREAK_POINT } from "@/constant/VIEW.contant";
 
-import ProductBox from "@/components/shared/ProductBox/ProductBox.component";
-import SectionTitle from "@/components/home/SectionTitle.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 import IconLoader from "../../../public/Icon/Icon-Loader";
+import ProductBox from "@/components/shared/ProductBox/ProductBox.component";
+import HomeSectionTitle from "@/components/home/HomeSectionTitle.component";
+import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
 
 function ProductSlider({ products, sectionTitle }) {
   const prevRef = useRef(null);
@@ -38,7 +38,7 @@ function ProductSlider({ products, sectionTitle }) {
     <div className="relative flex justify-center items-center border border-primaryOrange-light rounded-2xl h-[360px] sm:h-[380px] mt-20 px-5 select-none">
       <div className="flex flex-row sm:flex-col items-center">
         <span className="w-full absolute -top-24 right-0 left-0 mx-auto">
-          <SectionTitle text={sectionTitle} />
+          <HomeSectionTitle text={sectionTitle} />
         </span>
 
         <Link

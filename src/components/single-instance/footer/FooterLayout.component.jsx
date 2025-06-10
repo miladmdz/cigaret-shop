@@ -7,7 +7,7 @@ import {
   CATEGORY_FOOTER,
   FAST_ACCESSE_FOOTER,
   POPULAR_BRANDS_FOOTER,
-} from "@/constant/view.contant";
+} from "@/constant/VIEW.contant";
 import LinkList from "./LinkList.component";
 
 function FooterLayout() {

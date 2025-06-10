@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import {
   SIDE_FILTERS_MAP,
   SORT_FILTERS_MAP,
-} from "@/constant/filters.constant";
+} from "@/constant/FILTERS.constant";
 
 import BaseSelect from "@/components/shared/BaseSelect/BaseSelect.component";
 import ProductBox from "@/components/shared/ProductBox/ProductBox.component";

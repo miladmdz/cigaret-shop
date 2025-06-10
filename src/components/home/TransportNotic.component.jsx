@@ -1,7 +1,7 @@
 import React from "react";
 
 import IconLoader from "../../../public/Icon/Icon-Loader";
-import { TRANSFER_NOTICS_MAP } from "@/constant/view.contant";
+import { TRANSFER_NOTICS_MAP } from "@/constant/VIEW.contant";
 
 function TransportNotic() {
   return (
