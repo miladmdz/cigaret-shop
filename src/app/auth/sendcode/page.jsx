@@ -47,7 +47,7 @@ function page() {
         </h2>
 
         <div className="h-12 sm:h-16 flex items-center">
-          <IconLoader name="login-solid" size={32} />
+          <IconLoader iconName="LoginSolid" size={32} />
         </div>
       </div>
 

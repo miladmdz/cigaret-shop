@@ -58,7 +58,7 @@ const AnimatedMenu = ({ routeMap }) => {
 
       <motion.span className="mt-5" variants={itemVariants}>
         <BaseButton
-          iconName="heart-outline"
+          iconName="HeartOutline"
           color="text-primaryCream"
           sideIcon="right"
           text="علاقه مندی ها"
@@ -67,7 +67,7 @@ const AnimatedMenu = ({ routeMap }) => {
 
       <motion.span className="mt-5" variants={itemVariants}>
         <BaseButton
-          iconName="message-outline"
+          iconName="MessageOutline"
           color="text-primaryCream"
           sideIcon="right"
           text="پیوستن به باشگاه اسموک سیتی"

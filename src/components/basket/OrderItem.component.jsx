@@ -31,7 +31,7 @@ function OrderItem({ image, title, price }) {
         <div className="w-fit">
           <BaseButton
             text="حذف"
-            iconName="trash-outline"
+            iconName="TrashOutline"
             sideIcon="right"
             varient="text"
             size="small"

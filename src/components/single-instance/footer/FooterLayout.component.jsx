@@ -41,11 +41,19 @@ function FooterLayout() {
 
             <span className="flex items-center justify-center gap-5">
               <Link href="/" aria-label="instagram link">
-                <IconLoader name="instagram-solid" color="#fa8439" size={30} />
+                <IconLoader
+                  iconName="InstagramSolid"
+                  color="#fa8439"
+                  size={30}
+                />
               </Link>
 
               <Link href="/" aria-label="telegram id">
-                <IconLoader name="telegram-outline" color="#fa8439" size={30} />
+                <IconLoader
+                  iconName="TelegramOutline"
+                  color="#fa8439"
+                  size={30}
+                />
               </Link>
             </span>
 
@@ -101,7 +109,7 @@ function FooterLayout() {
           </div>
 
           <div className="min-w-[100px] flex items-center justify-center">
-            <IconLoader name="verify-solid" color="#fa8439" size={30} />
+            <IconLoader iconName="VerifySolid" color="#fa8439" size={30} />
           </div>
         </div>
       </div>

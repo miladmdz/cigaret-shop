@@ -11,7 +11,7 @@ const HeaderNav = () => {
       <div className="bg-primaryOrange-dark flex justify-center sm:justify-between items-center py-1 px-0 sm:px-4 xl:px-40">
         <div className="hidden sm:block">
           <BaseButton
-            iconName="message-solid"
+            iconName="MessageSolid"
             sideIcon="left"
             text="ارتباط باما"
             varient="text"
@@ -26,7 +26,7 @@ const HeaderNav = () => {
         <div className="hidden sm:flex w-28  items-center">
           <Link className="w-fit block" href="/" aria-label="instagram link">
             <BaseButton
-              iconName="instagram-solid"
+              iconName="InstagramSolid"
               sideIcon="left"
               color="text-white"
               varient="text"
@@ -35,7 +35,7 @@ const HeaderNav = () => {
 
           <Link className="w-fit block" href="/" aria-label="phone number">
             <BaseButton
-              iconName="phone-outline"
+              iconName="PhoneOutline"
               sideIcon="left"
               color="text-white"
               varient="text"

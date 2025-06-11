@@ -19,7 +19,7 @@ function HeaderBanner() {
 
   const buttonsConfig = [
     {
-      iconName: "shop-solid",
+      iconName: "ShopSolid",
       iconSize: windowSize.width < 640 ? 20 : 25,
       sideIcon: "left",
       varient: "text",
@@ -28,7 +28,7 @@ function HeaderBanner() {
       handler: () => router.push("/basket"),
     },
     {
-      iconName: "heart-solid",
+      iconName: "HeartSolid",
       iconSize: windowSize.width < 640 ? 20 : 25,
       sideIcon: "left",
       varient: "text",
@@ -37,7 +37,7 @@ function HeaderBanner() {
       handler: () => router.push("/pannel/user/favorite"),
     },
     {
-      iconName: "user-outline",
+      iconName: "UserOutline",
       iconSize: windowSize.width < 640 ? 20 : 25,
       sideIcon: "left",
       varient: "text",
@@ -86,7 +86,7 @@ function HeaderBanner() {
         <div className="hidden lg:flex text-white min-w-[214px] lg:min-w-1/3  justify-end">
           <div className="w-fit">
             <BaseButton
-              iconName="message-solid"
+              iconName="MessageSolid"
               sideIcon="right"
               size="small"
               text="پیوستن به باشگاه اسموک سیتی"
@@ -102,7 +102,7 @@ function HeaderBanner() {
           <BaseButton
             size="small"
             text="منو"
-            iconName="menu-outline"
+            iconName="MenuOutline"
             iconSize={windowSize.width < 640 ? 20 : 25}
             sideIcon="left"
             varient="text"

@@ -25,7 +25,7 @@ function AddressItem({ address, setAddress = () => {}, isSelected }) {
       <div className="flex items-center justify-end gap-5">
         <div className="w-fit">
           <BaseButton
-            iconName="edit-outline"
+            iconName="EditOutline"
             varient="contained"
             text="ویرایش"
             sideIcon="right"
@@ -38,7 +38,7 @@ function AddressItem({ address, setAddress = () => {}, isSelected }) {
 
         <div className="w-fit">
           <BaseButton
-            iconName="trash-outline"
+            iconName="TrashOutline"
             varient="contained"
             text="حذف"
             sideIcon="right"

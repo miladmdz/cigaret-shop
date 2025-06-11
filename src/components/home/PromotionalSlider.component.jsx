@@ -20,11 +20,11 @@ function PromotionalSlider({ images }) {
   return (
     <div className="relative py-6 px-1 sm:px-5  select-none">
       <div className="custom-next absolute left-6 top-1/2 -translate-y-1/2 bg-white text-black p-1 sm:p-2 rounded-full shadow cursor-pointer z-10">
-        <IconLoader name="chevronleft-solid" size={navigationButtonSize} />
+        <IconLoader iconName="ChevronLeftSolid" size={navigationButtonSize} />
       </div>
 
       <div className="custom-prev absolute right-6 top-1/2 -translate-y-1/2 bg-white text-black p-1 sm:p-2 rounded-full shadow cursor-pointer z-10">
-        <IconLoader name="chevronright-solid" size={navigationButtonSize} />
+        <IconLoader iconName="ChevronRightSolid" size={navigationButtonSize} />
       </div>
 
       <Swiper

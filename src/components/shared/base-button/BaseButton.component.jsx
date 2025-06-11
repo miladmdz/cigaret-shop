@@ -79,7 +79,7 @@ const BaseButton = ({
           {iconName && sideIcon === "right" && (
             <span className="flex items-center justify-center h-full">
               <IconLoader
-                name={iconName}
+                iconName={iconName}
                 size={iconSize}
                 color={iconColor}
                 className={iconClass}
@@ -98,7 +98,7 @@ const BaseButton = ({
           {iconName && sideIcon === "left" && (
             <span className="flex items-center justify-center h-full">
               <IconLoader
-                name={iconName}
+                iconName={iconName}
                 size={iconSize}
                 color={iconColor}
                 className={iconClass}

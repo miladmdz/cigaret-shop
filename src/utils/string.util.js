@@ -1,7 +1,5 @@
-export const toPascalCase = ({ str }) =>
-  str
-    .toLowerCase()
-    .replace(/\w+/g, (word) => word.charAt(0).toUpperCase() + word.slice(1));
+const splitByCapitalLetters = (str) => {
+  return str.split(/(?=[A-Z])/);
+};
 
-export const toKebabCase = ({ str }) =>
-  str.trim().toLowerCase().replace(/\s+/g, "-");
+export { splitByCapitalLetters };

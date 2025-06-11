@@ -58,14 +58,14 @@ function page() {
     <div className="flex flex-col xl:flex-row px-4 xl:px-40 py-10 items-start justify-between gap-5">
       <div className="flex flex-col w-full gap-8">
         <div className="flex items-center gap-4">
-          <IconLoader name="location-outline" />
+          <IconLoader iconName="LocationOutline" />
 
           <h2 className="text-xl font-bold">لیست ادرس ها</h2>
         </div>
 
         <BaseButton
           text="افزودن ادرس جدید"
-          iconName="plus-outline"
+          iconName="PlusOutline"
           sideIcon="right"
           varient="outline"
           color="border-primaryOrange-light"
@@ -86,16 +86,24 @@ function page() {
         <div
           className={`${
             selectedAddress ? "flex" : "hidden"
-          } w-full items-center gap-5 bg-white rounded px-4 py-4 flex-wrap`}
+          } flex flex-col w-full gap-8`}
         >
-          {deliveries.map((item) => (
-            <DeliveryItem
-              isSelected={item.value === selectedDelivery?.value}
-              typeDelivery={item}
-              key={item.value}
-              setType={(newValue) => setSelectedDelivery(newValue)}
-            />
-          ))}
+          <div className="flex items-center gap-4">
+            <IconLoader iconName="LocationOutline" />
+
+            <h2 className="text-xl font-bold">لیست ادرس ها</h2>
+          </div>
+
+          <div className="w-full flex items-center gap-5 bg-white rounded px-4 py-4 flex-wrap">
+            {deliveries.map((item) => (
+              <DeliveryItem
+                isSelected={item.value === selectedDelivery?.value}
+                typeDelivery={item}
+                key={item.value}
+                setType={(newValue) => setSelectedDelivery(newValue)}
+              />
+            ))}
+          </div>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ function ProductBox({ title, price, rate, image }) {
             <div className="flex items-center justify-center">
               {Array.from({ length: 5 - rate }).map((_, i) => (
                 <IconLoader
-                  name="star-solid"
+                  iconName="StarSolid"
                   key={i}
                   color="#9ca3af"
                   size={15}
@@ -29,7 +29,7 @@ function ProductBox({ title, price, rate, image }) {
 
               {Array.from({ length: rate }).map((_, i) => (
                 <IconLoader
-                  name="star-solid"
+                  iconName="StarSolid"
                   key={i}
                   color="#fa8439"
                   size={15}

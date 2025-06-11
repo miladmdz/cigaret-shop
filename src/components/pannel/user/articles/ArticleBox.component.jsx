@@ -27,7 +27,7 @@ function ArticleBox({ title, image, view, date }) {
 
       <div className="flex w-full flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 text-xs sm:text-sm text-gray-600">
         <p className="flex items-center gap-2">
-          <IconLoader name="eyeopen-outline" size={18} />
+          <IconLoader iconName="EyeOpenOutline" size={18} />
 
           {view}
         </p>
@@ -35,7 +35,7 @@ function ArticleBox({ title, image, view, date }) {
         <p className="flex flex-row-reverse sm:flex-row items-center gap-2">
           {date}
 
-          <IconLoader name="calender-outline" size={18} />
+          <IconLoader iconName="CalenderOutline" size={18} />
         </p>
       </div>
     </div>

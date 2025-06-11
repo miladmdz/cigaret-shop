@@ -8,7 +8,7 @@ function DiscountSection({ value, onChange, submitCode }) {
     <div className="w-full flex items-center justify-start gap-4 bg-white rounded py-3 px-5">
       <div className="w-1/2">
         <InputField
-          label="کد تخفیف"
+          label="کد تخفیف %"
           id="discountCode"
           value={value}
           onChange={onChange}

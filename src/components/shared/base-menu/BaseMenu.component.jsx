@@ -43,7 +43,7 @@ const BaseMenu = forwardRef((props, ref) => {
         <div className="flex  justify-end p-2 ">
           <div className="w-fit">
             <BaseButton
-              iconName="close-solid"
+              iconName="CloseSolid"
               iconColor="white"
               sideIcon="right"
               varient="text"

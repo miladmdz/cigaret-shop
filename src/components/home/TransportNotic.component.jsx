@@ -12,7 +12,7 @@ function TransportNotic() {
             key={notic.title}
             className="bg-primaryBg px-3 py-5 shadow-2xl w-[300px] sm:w-[200px] md:w-[300px] rounded-xl flex items-center gap-6"
           >
-            <IconLoader color="none" name={notic.iconName} size={notic.size} />
+            <IconLoader iconName={notic.iconName} size={notic.size} />
 
             <div className="flex flex-col items-start">
               <h2 className="h-12 text-base sm:text-xs md:text-sm lg:text-base font-Dana-Medium font-bold ">

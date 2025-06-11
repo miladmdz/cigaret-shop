@@ -10,7 +10,7 @@ function RulesCard() {
       {WARNING_BEFORE_BUY.map((item) => (
         <div key={item.id} className="flex items-start gap-1">
           <span className="flex items-center h-8">
-            <IconLoader name="warning-solid" color="none" size={18} />
+            <IconLoader iconName="WarningSolid" color="none" size={18} />
           </span>
           <p className="text-sm  leading-8">{item.text}</p>
         </div>

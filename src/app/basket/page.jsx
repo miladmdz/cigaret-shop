@@ -20,7 +20,7 @@ function page() {
           <BaseButton
             varient="contained"
             text="پاک کردن سبدخرید"
-            iconName="trash-outline"
+            iconName="TrashOutline"
             sideIcon="right"
             color="bg-red-500"
             iconColor="white"

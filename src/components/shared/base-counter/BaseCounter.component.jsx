@@ -22,7 +22,7 @@ function BaseCounter({ maxNumber = 10, minNumber = 0, disable = false }) {
 
       <div className="flex flex-col items-center">
         <BaseButton
-          iconName="chevronup-solid"
+          iconName="ChevronUpSolid"
           sideIcon="left"
           varient="text"
           iconSize={10}
@@ -32,7 +32,7 @@ function BaseCounter({ maxNumber = 10, minNumber = 0, disable = false }) {
         />
 
         <BaseButton
-          iconName="chevrondown-solid"
+          iconName="ChevronDownSolid"
           sideIcon="left"
           varient="text"
           iconSize={10}

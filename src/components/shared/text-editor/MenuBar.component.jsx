@@ -50,67 +50,67 @@ function MenuBar({ editor }) {
 
   const options = [
     {
-      iconName: "h1text-outline",
+      iconName: "H1TextOutline",
       onclick: () => editor.chain().focus().toggleHeading({ level: 1 }).run(),
       pressed: editor.isActive("heading", { level: 1 }) ? "is-active" : "",
     },
     {
-      iconName: "h2text-outline",
+      iconName: "H2TextOutline",
       onclick: () => editor.chain().focus().toggleHeading({ level: 2 }).run(),
       pressed: editor.isActive("heading", { level: 2 }) ? "is-active" : "",
     },
     {
-      iconName: "h3text-outline",
+      iconName: "H3TextOutline",
       onclick: () => editor.chain().focus().toggleHeading({ level: 3 }).run(),
       pressed: editor.isActive("heading", { level: 3 }) ? "is-active" : "",
     },
     {
-      iconName: "bold-outline",
+      iconName: "BoldOutline",
       onclick: () => editor.chain().focus().toggleBold().run(),
       pressed: editor.isActive("bold") ? "is-active" : "",
     },
     {
-      iconName: "italic-outline",
+      iconName: "ItalicOutline",
       onclick: () => editor.chain().focus().toggleItalic().run(),
       pressed: editor.isActive("italic") ? "is-active" : "",
     },
     {
-      iconName: "strick-outline",
+      iconName: "StrickOutline",
       onclick: () => editor.chain().focus().toggleStrike().run(),
       pressed: editor.isActive("strike") ? "is-active" : "",
     },
     {
-      iconName: "textright-outline",
+      iconName: "TextRightOutline",
       onclick: () => setAlignmentSmart("right"),
       pressed: editor.isActive({ textAlign: "right" }) ? "is-active" : "",
     },
     {
-      iconName: "menu-outline",
+      iconName: "MenuOutline",
       onclick: () => setAlignmentSmart("center"),
       pressed: editor.isActive({ textAlign: "center" }) ? "is-active" : "",
     },
     {
-      iconName: "textleft-outline",
+      iconName: "TextLeftOutline",
       onclick: () => setAlignmentSmart("left"),
       pressed: editor.isActive({ textAlign: "left" }) ? "is-active" : "",
     },
     {
-      iconName: "listbullet-outline",
+      iconName: "ListBulletOutline",
       onclick: () => editor.chain().focus().toggleBulletList().run(),
       pressed: editor.isActive("bulletList") ? "is-active" : "",
     },
     {
-      iconName: "listnumber-outline",
+      iconName: "ListNumberOutline",
       onclick: () => editor.chain().focus().toggleOrderedList().run(),
       pressed: editor.isActive("orderedList") ? "is-active" : "",
     },
     {
-      iconName: "pen-outline",
+      iconName: "PenOutline",
       onclick: () => editor.chain().focus().toggleHighlight().run(),
       pressed: editor.isActive("highlight") ? "is-active" : "",
     },
     {
-      iconName: "image-outline",
+      iconName: "ImageOutline",
       onclick: () => addImage(),
     },
   ];
@@ -123,7 +123,7 @@ function MenuBar({ editor }) {
           onClick={item.onclick}
           className={`${item.pressed} cursor-pointer hover:opacity-50 transition-opacity`}
         >
-          <IconLoader name={item.iconName} size={18} />
+          <IconLoader iconName={item.iconName} size={18} />
         </button>
       ))}
     </div>

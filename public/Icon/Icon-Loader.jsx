@@ -1,23 +1,25 @@
 import React from "react";
 
-import { toKebabCase, toPascalCase } from "@/utils/string.util";
+import { splitByCapitalLetters } from "@/utils/string.util";
 
 const IconLoader = ({
-  name = "",
+  iconName = "",
   size = 24,
   color = "currentColor",
   className = "",
 }) => {
-  const toNormalizeName = name.split("-")[0];
-  const folderName = toPascalCase({ str: toNormalizeName });
+  const normalizeIconName = splitByCapitalLetters(iconName);
 
-  const fileName = toKebabCase({ str: name });
+  const directoryName = normalizeIconName
+    .slice(0, -1)
+    .map((item) => String(item).toLocaleLowerCase())
+    .join("-");
 
   let ImportedIcon = null;
   try {
-    ImportedIcon = require(`./${folderName}/${fileName}`).default;
+    ImportedIcon = require(`./${directoryName}/${iconName}`).default;
   } catch (error) {
-    ImportedIcon = require("./default-solid").default;
+    ImportedIcon = require("./LoadingSolid").default;
   }
 
   return <ImportedIcon size={size} color={color} className={className} />;

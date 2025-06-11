@@ -19,40 +19,40 @@ function SideBar() {
       label: "داشبورد",
       value: "dashboard",
       route: "/pannel/user/dashboard",
-      iconName: "squars-outline",
+      iconName: "SquarsOutline",
       disable: true,
     },
     {
       label: "مقالات",
       value: "articles",
       route: "/pannel/admin/articles",
-      iconName: "document-outline",
+      iconName: "DocumentOutline",
     },
     {
       label: "علاقه مندی ها",
       value: "favorite",
       route: "/pannel/user/favorite",
-      iconName: "heart-outline",
+      iconName: "HeartOutline",
     },
     {
       label: "تاریخچه سفارشات",
       value: "historyOrders",
       route: "/pannel/user/history-orders",
-      iconName: "shop-outline",
+      iconName: "ShopOutline",
       disable: true,
     },
     {
       label: "باشگاه مشتریان",
       value: "customerClub",
       route: "/pannel/user/customer-club",
-      iconName: "sparkles-outline",
+      iconName: "SparklesOutline",
       disable: true,
     },
     {
       label: "تیکت ها",
       value: "tickets",
       route: "/pannel/user/tickets",
-      iconName: "ticket-outline",
+      iconName: "TicketOutline",
       disable: true,
     },
   ];
@@ -90,12 +90,12 @@ function SideBar() {
                   <div
                     className={`flex items-center py-3 px-2 gap-2 cursor-not-allowed opacity-50`}
                   >
-                    <IconLoader name={item.iconName} />
+                    <IconLoader iconName={item.iconName} />
                     <p>{item.label}</p>
                   </div>
                 ) : (
                   <Link href={item.route} className={classes}>
-                    <IconLoader name={item.iconName} />
+                    <IconLoader iconName={item.iconName} />
                     <p>{item.label}</p>
                   </Link>
                 )}

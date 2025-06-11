@@ -50,11 +50,11 @@ export default function BrandSlider() {
 
       <div className="relative py-5 px-5  select-none">
         <div className="custom-next absolute left-6 top-1/2 -translate-y-1/2 bg-white text-black p-2 rounded-full shadow cursor-pointer z-10">
-          <IconLoader name="chevronleft-solid" />
+          <IconLoader iconName="ChevronLeftSolid" />
         </div>
 
         <div className="custom-prev absolute right-6 top-1/2 -translate-y-1/2 bg-white text-black p-2 rounded-full shadow cursor-pointer z-10">
-          <IconLoader name="chevronright-solid" />
+          <IconLoader iconName="ChevronRightSolid" />
         </div>
 
         <Swiper

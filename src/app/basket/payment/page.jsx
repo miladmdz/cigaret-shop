@@ -44,13 +44,13 @@ const Page = () => {
 
         <SectionTitle title="اطلاعات سفارش" />
 
-        <InfoCard iconName="location-outline">
+        <InfoCard iconName="LocationOutline">
           این سفارش به <span className="font-bold">{orderInfo.name}</span> به
           آدرس <span className="font-bold">{orderInfo.address}</span> تحویل داده
           میشود.
         </InfoCard>
 
-        <InfoCard iconName="truck-outline">
+        <InfoCard iconName="TruckOutline">
           این سفارش از طریق{" "}
           <span className="font-bold">{orderInfo.deliveryType}</span> با هزینه{" "}
           <span className="font-bold">
@@ -59,7 +59,7 @@ const Page = () => {
           ارسال می‌گردد.
         </InfoCard>
 
-        <InfoCard iconName="verify-outline">
+        <InfoCard iconName="VerifyOutline">
           مرسوله شما بیمه شده است. لطفا هنگام تحویل از سلامت آن اطمینان حاصل
           کنید.
         </InfoCard>

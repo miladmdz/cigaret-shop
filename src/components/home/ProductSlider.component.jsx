@@ -46,7 +46,7 @@ function ProductSlider({ products, sectionTitle }) {
           className="w-fit absolute -top-4 left-8 bg-primaryBg px-3 rounded-2xl"
         >
           <BaseButton
-            iconName="arrowleft-solid"
+            iconName="ArrowLeftSolid"
             sideIcon="left"
             text="مشاهده همه"
             varient="outline"
@@ -63,7 +63,7 @@ function ProductSlider({ products, sectionTitle }) {
           className="absolute right-0 top-1/2 -translate-y-1/2 z-10"
         >
           <div className="bg-white text-black p-2 rounded-full shadow cursor-pointer">
-            <IconLoader name="chevronright-solid" />
+            <IconLoader iconName="ChevronRightSolid" />
           </div>
         </div>
 
@@ -72,7 +72,7 @@ function ProductSlider({ products, sectionTitle }) {
           className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
         >
           <div className="bg-white text-black p-2 rounded-full shadow cursor-pointer">
-            <IconLoader name="chevronleft-solid" />
+            <IconLoader iconName="ChevronLeftSolid" />
           </div>
         </div>
 

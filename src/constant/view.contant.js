@@ -1,30 +1,30 @@
 const TRANSFER_NOTICS_MAP = [
   {
-    iconName: "truck-outline",
+    iconName: "TruckOutline",
     title: "ارسال رایگان",
     desc: "خریدهای بالای 1 میلیون تومان",
     size: 30,
   },
   {
-    iconName: "box-outline",
+    iconName: "BoxOutline",
     title: "ارسال با پست و تیپاکس",
     desc: "به سراسر کشور",
     size: 30,
   },
   {
-    iconName: "cigarret-outline",
+    iconName: "CigarretOutline",
     title: "تنوع بالای محصولات",
     desc: "لوازم مورد نیاز روزمره",
     size: 30,
   },
   {
-    iconName: "arrowback-outline",
+    iconName: "ArrowBackOutline",
     title: "عودت کالا بدون شرط",
     desc: "بدون بازشدن وکیوم اولیه",
     size: 30,
   },
   {
-    iconName: "verify-outline",
+    iconName: "VerifyOutline",
     title: "ضمانت کالاها طبق توضیحات ذکر شده برای هر محصول",
     desc: "ضمانت بازگشت وجه",
     size: 50,

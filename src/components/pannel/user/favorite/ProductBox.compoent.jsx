@@ -33,7 +33,7 @@ function ProductBox({ title, price, rate, image }) {
 
       <Link href={`/product/${title}`} aria-label="add product to basket">
         <BaseButton
-          iconName="trash-outline"
+          iconName="TrashOutline"
           iconColor="white"
           sideIcon="left"
           varient="contained"
