@@ -2,7 +2,7 @@
 
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 const BaseMenu = forwardRef((props, ref) => {
   const [isVisible, setIsVisible] = useState(false);

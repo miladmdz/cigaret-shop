@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import BaseSelect from "@/components/shared/BaseSelect/BaseSelect.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import InputField from "@/components/shared/InputField/InputField.component";
+import BaseSelect from "@/components/shared/base-select/BaseSelect.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import InputField from "@/components/shared/input-field/InputField.component";
 
 function AddressForm() {
   const [inputConfig, setInputConfig] = useState([

@@ -1,7 +1,7 @@
 import React from "react";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import BaseCounter from "@/components/shared/BaseCounter/BaseCounter.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import BaseCounter from "@/components/shared/base-counter/BaseCounter.component";
 import IconLoader from "../../../public/Icon/Icon-Loader";
 import Link from "next/link";
 

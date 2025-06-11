@@ -1,5 +1,5 @@
 "use client";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 import React, { useState } from "react";
 import IconLoader from "../../../../public/Icon/Icon-Loader";
 import Image from "next/image";

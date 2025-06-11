@@ -1,6 +1,6 @@
 import React from "react";
 
-import Tiptap from "@/components/shared/TextEditor/TipTap.component";
+import Tiptap from "@/components/shared/text-editor/TipTap.component";
 
 function page() {
   return (

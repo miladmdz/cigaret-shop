@@ -4,8 +4,8 @@ import React, { useMemo } from "react";
 
 import { VALUE_ADDED_TAX } from "@/constant/FINACIAL.constant";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import BaseAccordion from "@/components/shared/BaseAccordion/BaseAccordion.compoent";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import BaseAccordion from "@/components/shared/base-accordion/BaseAccordion.compoent";
 import { formatCurrency } from "@/utils/currency.util";
 
 function CalculateCard({

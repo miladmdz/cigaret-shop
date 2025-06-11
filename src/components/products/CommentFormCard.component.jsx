@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import IconLoader from "../../../public/Icon/Icon-Loader";
-import BaseButton from "../shared/BaseButton/BaseButton.component";
+import BaseButton from "../shared/base-button/BaseButton.component";
 
 function CommentFormCard() {
   const [rating, setRating] = useState(0);

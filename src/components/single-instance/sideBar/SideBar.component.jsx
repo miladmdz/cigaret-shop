@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import IconLoader from "../../../../public/Icon/Icon-Loader";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 import { usePathname } from "next/navigation";
 
 function SideBar() {

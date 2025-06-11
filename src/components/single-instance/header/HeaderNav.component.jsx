@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 const HeaderNav = () => {
   return (

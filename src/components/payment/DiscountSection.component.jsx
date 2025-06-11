@@ -1,7 +1,7 @@
 import React from "react";
 
-import InputField from "@/components/shared/InputField/InputField.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import InputField from "@/components/shared/input-field/InputField.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 function DiscountSection({ value, onChange, submitCode }) {
   return (

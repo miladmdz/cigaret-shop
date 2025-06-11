@@ -2,9 +2,9 @@
 
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 
-import BaseButton from "../BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
-const BaseSideSheet = forwardRef((props, ref) => {
+const BaseModal = forwardRef((props, ref) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { title, children } = props;
@@ -26,29 +26,27 @@ const BaseSideSheet = forwardRef((props, ref) => {
 
       <div
         className={`${
-          isOpen ? "right-0" : "-right-[1000px]"
-        } absolute top-0 z-10  h-screen min-w-[230px] w-1/3 bg-white transition-all`}
+          isOpen ? "right-0 left-0 mx-auto" : "-right-[1000px]"
+        } absolute top-1/12 md:top-1/6 z-10 max-h-[500px]  md:max-h-[700px] overflow-y-auto max-w-[350px] md:max-w-[500px] min-w-[300px] md:w-1/3 bg-white px-4 py-4 transition-all rounded`}
       >
-        <div className="flex w-full bg-primaryOrange items-center justify-between px-1 py-0.5 border-b border-gray-400">
-          <p className="flex h-full font-Dana-Regular pr-5 text-white">
-            {title}
-          </p>
+        <div className="flex w-full items-center justify-between ">
+          <p className="flex h-full font-Dana-Regular text-black">{title}</p>
 
           <div className="w-10">
             <BaseButton
               iconName="close-solid"
               sideIcon="right"
               varient="text"
-              iconColor="white"
+              iconColor="black"
               updatedAction={() => setVisibility(false)}
             />
           </div>
         </div>
 
-        <div className="h-full px-2">{children}</div>
+        <div className="h-full ">{children}</div>
       </div>
     </div>
   );
 });
 
-export default BaseSideSheet;
+export default BaseModal;

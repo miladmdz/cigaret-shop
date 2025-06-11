@@ -5,7 +5,7 @@ import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import RulesCard from "@/components/basket/RulesCard.component";
 import OrderList from "@/components/basket/OrderList.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 import CalculateCard from "@/components/basket/CalculateCard.component";
 import { useRouter } from "next/navigation";
 

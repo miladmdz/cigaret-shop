@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useRef } from "react";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import useWindowSize from "@/customHook/useWindowSize.hook";
 import { ROUTER_MAP } from "@/constant/ROUTER.constant";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 import AnimatedMenu from "@/components/single-instance/header/AnimatedMenu.component";
-import BaseMenu from "@/components/shared/BaseMenu/BaseMenu.component";
-import { useRouter } from "next/navigation";
+import BaseMenu from "@/components/shared/base-menu/BaseMenu.component";
 
 function HeaderBanner() {
   const windowSize = useWindowSize();

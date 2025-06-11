@@ -6,14 +6,14 @@ import {
   SORT_FILTERS_MAP,
 } from "@/constant/FILTERS.constant";
 
-import BaseSelect from "@/components/shared/BaseSelect/BaseSelect.component";
-import ProductBox from "@/components/shared/ProductBox/ProductBox.component";
-import SideTag from "@/components/shared/SideTag/SideTag.component";
-import PriceRangeFilter from "@/components/shared/PriceRangeFilter/PriceRangeFilter.component";
-import PaginationTable from "@/components/shared/Pagination/Pagination.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import BaseSideSheet from "@/components/shared/BaseSideSheet/BaseSideSheet.component";
-import SideFilter from "@/components/shared/SideFilter SideFilter/SideFilter SideFilter.component";
+import BaseSelect from "@/components/shared/base-select/BaseSelect.component";
+import ProductBox from "@/components/shared/product-box/ProductBox.component";
+import SideTag from "@/components/shared/side-tag/SideTag.component";
+import PriceRangeFilter from "@/components/shared/price-range-filter/PriceRangeFilter.component";
+import PaginationTable from "@/components/shared/pagination/Pagination.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import BaseSideSheet from "@/components/shared/base-sidesheet/BaseSideSheet.component";
+import SideFilter from "@/components/shared/side-filter/SideFilter.component";
 
 function page() {
   const totalItem = 30;

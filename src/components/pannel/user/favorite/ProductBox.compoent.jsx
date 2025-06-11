@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 import Link from "next/link";
 
 function ProductBox({ title, price, rate, image }) {

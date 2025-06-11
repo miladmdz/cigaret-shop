@@ -1,6 +1,6 @@
 import Empty from "@/components/pannel/user/favorite/Empty.compoent";
 import ProductBox from "@/components/pannel/user/favorite/ProductBox.compoent";
-import SectionTitle from "@/components/shared/SectionTitle/SectionTitle.component";
+import SectionTitle from "@/components/shared/section-title/SectionTitle.component";
 import React from "react";
 
 function page() {

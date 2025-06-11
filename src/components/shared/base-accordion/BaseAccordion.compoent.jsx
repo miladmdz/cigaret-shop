@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 const BaseAccordion = ({
   title,

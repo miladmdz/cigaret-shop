@@ -12,9 +12,9 @@ import "swiper/css/pagination";
 import { SLIDER_BREAK_POINT } from "@/constant/VIEW.contant";
 
 import IconLoader from "../../../public/Icon/Icon-Loader";
-import ProductBox from "@/components/shared/ProductBox/ProductBox.component";
+import ProductBox from "@/components/shared/product-box/ProductBox.component";
 import HomeSectionTitle from "@/components/home/HomeSectionTitle.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 function ProductSlider({ products, sectionTitle }) {
   const prevRef = useRef(null);

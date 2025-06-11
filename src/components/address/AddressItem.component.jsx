@@ -1,6 +1,6 @@
 import React from "react";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 function AddressItem({ address, setAddress = () => {}, isSelected }) {
   return (

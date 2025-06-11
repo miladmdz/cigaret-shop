@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import { formatCurrency } from "@/utils/currency.util";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import BaseCounter from "@/components/shared/BaseCounter/BaseCounter.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import BaseCounter from "@/components/shared/base-counter/BaseCounter.component";
 
 function OrderItem({ image, title, price }) {
   return (

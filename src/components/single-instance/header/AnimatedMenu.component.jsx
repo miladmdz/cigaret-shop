@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import { motion } from "framer-motion";
 
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 const containerVariants = {
   hidden: { opacity: 0 },

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import BaseButton from "../BaseButton/BaseButton.component";
+import BaseButton from "../base-button/BaseButton.component";
 
 function BaseCounter({ maxNumber = 10, minNumber = 0, disable = false }) {
   const [number, setNumber] = useState(0);

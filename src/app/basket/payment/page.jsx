@@ -7,7 +7,7 @@ import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import CalculateCard from "@/components/basket/CalculateCard.component";
 import OrderList from "@/components/basket/OrderList.component";
-import SectionTitle from "@/components/shared/SectionTitle/SectionTitle.component";
+import SectionTitle from "@/components/shared/section-title/SectionTitle.component";
 import InfoCard from "@/components/payment/InfoCard.component";
 import DiscountSection from "@/components/payment/DiscountSection.component";
 

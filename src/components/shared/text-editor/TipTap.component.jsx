@@ -10,9 +10,9 @@ import TextAlign from "@tiptap/extension-text-align";
 import BulletList from "@tiptap/extension-bullet-list";
 import OrderedList from "@tiptap/extension-ordered-list";
 
-import { CustomImage } from "@/components/shared/TextEditor/CustomImage";
-import MenuBar from "@/components/shared/TextEditor/MenuBar.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
+import { CustomImage } from "@/components/shared/text-editor/CustomImage";
+import MenuBar from "@/components/shared/text-editor/MenuBar.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
 
 const Tiptap = () => {
   const [contentTextEditor, setContentTextEditor] = useState("");

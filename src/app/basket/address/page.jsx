@@ -6,8 +6,8 @@ import { BUY_RULE_TEXT } from "@/constant/VIEW.contant";
 
 import IconLoader from "../../../../public/Icon/Icon-Loader";
 import CalculateCard from "@/components/basket/CalculateCard.component";
-import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
-import BaseModal from "@/components/shared/BaseModal/BaseModal.component";
+import BaseButton from "@/components/shared/base-button/BaseButton.component";
+import BaseModal from "@/components/shared/base-modal/BaseModal.component";
 import AddressForm from "@/components/address/AddressForm.component";
 import DeliveryItem from "@/components/address/DeliveryItem.component";
 import AddressItem from "@/components/address/AddressItem.component";

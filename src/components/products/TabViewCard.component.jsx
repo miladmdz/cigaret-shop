@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import TabView from "@/components/shared/TabView/TabView.component";
+import TabView from "@/components/shared/tab-view/TabView.component";
 import DescriptionCard from "@/components/products/DescriptionCard.component";
 import CommentsCard from "@/components/products/CommentsCard.component";
 
