@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import IconLoader from "../../../public/Icon/Icon-Loader";
-import { useWindowSize } from "@/customHook/window.hook";
+import useWindowSize from "@/customHook/useWindowSize.hook";
 
 function PromotionalSlider({ images }) {
   const windowSize = useWindowSize();

@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 
-import { useWindowSize } from "@/customHook/window.hook";
+import useWindowSize from "@/customHook/useWindowSize.hook";
 import { ROUTER_MAP } from "@/constant/ROUTER.constant";
 
 import BaseButton from "@/components/shared/BaseButton/BaseButton.component";
