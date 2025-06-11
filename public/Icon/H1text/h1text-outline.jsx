@@ -1,6 +1,6 @@
 import React from "react";
 
-function MenuOutline({ className = "", size = 24, color = "currentColor" }) {
+function H1textOutline({ className = "", size = 24, color = "currentColor" }) {
   return (
     <svg
       width={size}
@@ -15,10 +15,10 @@ function MenuOutline({ className = "", size = 24, color = "currentColor" }) {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        d="M2.243 4.493v7.5m0 0v7.502m0-7.501h10.5m0-7.5v7.5m0 0v7.501m4.501-8.627 2.25-1.5v10.126m0 0h-2.25m2.25 0h2.25"
       />
     </svg>
   );
 }
 
-export default MenuOutline;
+export default H1textOutline;
