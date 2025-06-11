@@ -60,8 +60,17 @@ const AnimatedMenu = ({ routeMap }) => {
         <BaseButton
           iconName="heart-outline"
           color="text-primaryCream"
-          sideIcon="left"
-          text="ذخیره شده ها"
+          sideIcon="right"
+          text="علاقه مندی ها"
+        />
+      </motion.span>
+
+      <motion.span className="mt-5" variants={itemVariants}>
+        <BaseButton
+          iconName="message-outline"
+          color="text-primaryCream"
+          sideIcon="right"
+          text="پیوستن به باشگاه اسموک سیتی"
         />
       </motion.span>
     </motion.div>
