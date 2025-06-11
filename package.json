@@ -10,6 +10,12 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
+    "@tiptap/extension-bullet-list": "^2.14.0",
+    "@tiptap/extension-highlight": "^2.14.0",
+    "@tiptap/extension-image": "^2.14.0",
+    "@tiptap/extension-list-item": "^2.14.0",
+    "@tiptap/extension-ordered-list": "^2.14.0",
+    "@tiptap/extension-text-align": "^2.14.0",
     "@tiptap/pm": "^2.14.0",
     "@tiptap/react": "^2.14.0",
     "@tiptap/starter-kit": "^2.14.0",
