@@ -35,7 +35,7 @@ const HeaderNav = () => {
 
           <Link className="w-fit block" href="/" aria-label="phone number">
             <BaseButton
-              iconName="PhoneOutline"
+              iconName="PhoneSolid"
               sideIcon="left"
               color="text-white"
               varient="text"
