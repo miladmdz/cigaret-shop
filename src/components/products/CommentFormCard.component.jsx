@@ -31,7 +31,7 @@ function CommentFormCard() {
                 onMouseLeave={() => setHover(0)}
               >
                 <IconLoader
-                  name="star-solid"
+                  iconName="StarSolid"
                   size={22}
                   className={`cursor-pointer transition-colors ${
                     (hover || rating) >= star
